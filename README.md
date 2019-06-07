@@ -1,1 +1,1 @@
-# aumet_admin
+# React Admin Template using react and redux
