@@ -1,0 +1,114 @@
+/*@import url('styles.css');*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+#menu li a i{
+  width: 22px;
+  font-size: 15px;
+}
+#login .fa {
+  color: #66c4ae;
+  position: absolute;
+  left: 6px;
+  top: 38px;
+  width: 30px;
+}
+.profile {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  min-height: 200px;
+  max-width: 1000px;
+}
+
+.profile-image {
+  margin: 0 auto;
+  max-width: 138px;
+}
+
+.profile-name {
+  margin: 5px 0;
+}
+
+.profile .list li {
+  padding: 4px 0;
+}
+
+.profile .list .lbl {
+  color: #777;
+  vertical-align: middle;
+  margin-right: 10px;
+  max-width: 150px;
+}
+
+.profile .list .lbl + span {
+  vertical-align: middle;
+}
+
+.mar-top {
+  margin-top: 20px !important;
+}
+.display-no {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-dtls {
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .edit-profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.status-toggler {
+  position: relative;
+  width: 60px;
+  height: 24px;
+
+  border-radius: 12px;
+  overflow: hidden;
+}
+.status-toggler input {
+  visibility: hidden;
+  position: absolute;
+}
+.status-toggler label {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  cursor: pointer;
+  background-color: #eee;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.status-toggler label:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.status-toggler input:checked + label {
+  background-color: #4cda64;
+}
+.status-toggler input:checked + label:after {
+  left: 38px;
+}
